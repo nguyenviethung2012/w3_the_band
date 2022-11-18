@@ -1,0 +1,184 @@
+/* --- Start: MOBILE RESPONSIVE --- */
+@media only screen and (max-width: 46.1875em) {
+    /* Header */
+    /* Ẩn button search đi  */
+    #header .header_search {
+        display: none; 
+    }
+    
+    /* Hiển thị Menu theo chiều dọc */
+    #header ul > li {
+        display: block;
+     }
+    
+    /* Nút li home chỉ cần width vừa đủ thôi, các nút còn lại cần full */
+    #header #home {
+        display: inline-block;
+    }
+    
+    /* hover to more --> show subnav */
+    #header ul li:hover .header_subnav {
+        display: block;
+    }
+    
+    /* Ẩn những phần thò ra ngoài (height=46.5px) header bằng overflow */
+    #header {
+        overflow: hidden;
+    }
+    
+    #header .header_subnav {
+        position: initial;
+        /* display: none; */
+    }
+    
+    /* Điều chỉnh lại padding của các element trong 
+    subnav để nhìn giống là con của more */
+    #header .header_subnav li a {
+        display: inline-block;
+        padding: 12px 40px;
+        width: 100%;
+        background-color: #222;
+        color: #fff;
+        font-size: 15px;
+        text-transform: capitalize;
+        text-decoration: none;
+    }
+    
+    #header .header_subnav li:hover a{
+        background-color: #000;
+        color: #fff;
+    }
+    
+    .display-block-mobile {
+        display: block !important;
+    }
+    
+    .display-none-mobile {
+        display: none !important;
+    }
+    
+    /* Slider */
+    .slider-des {
+        display: none;
+    }
+    
+    /* Content */
+    /* class helps element to take full width */
+    .mobile-full-width {
+        width: 100% !important;
+    }
+    /* margin-top: 8px on mobile devices */
+    .mobile-mt-8 {
+        margin-top: 8px;
+    }
+
+    /* MODAL */
+    .modal {
+        padding: 33% 3%;
+    }
+
+    .modal .modal-container {
+        width: 100%;
+    }
+    
+    /* Footer */
+    footer p {
+        font-size: 18px !important;
+    }
+    
+    
+    footer a {
+        font-size: 18px !important;
+        padding: 14px 0;
+    }
+        
+}
+/* ------------- End: Mobile Responsive ------------- */
+    
+    
+   
+
+
+
+
+
+
+
+
+
+
+    
+    /* --- Start: TABLET RESPONSIVE --- */
+    @media only screen and (min-width: 46.25em) and (max-width: 64.9375em) {
+        /* Ẩn mobile_menu_button đi */
+        .header_menu {
+            display: none;
+        }
+    
+        /* Tăng chiều cao cho các options ở subnav */
+        #header .header_subnav li a {
+            padding: 12px 16px !important;
+        }
+    }
+    /* ------------- End: Tablet Responsive ------------- */
+    
+    
+    /* --- Start: MOBILE && TABLET RESPONSIVE --- */
+    @media only screen and (max-width: 64.9375em) {
+        /* Chỉnh size các button (cao ít nhất 42-48px) */
+        .button {
+            padding: 16px 16px !important;
+        }
+    
+        /* Chỉnh size các input (cao ít nhất 42-48px) */
+        #contact .contact-form input {
+            padding: 14px 8px;
+            width: 100%;
+        }
+    
+        /* Chỉnh font-size cho các phần có thể click ở footer */
+        footer .footer-section .footer-icon-list {
+            font-size: 35px;
+        }
+    
+        footer p {
+            font-size: 25px;
+        }
+    
+        footer a {
+            font-size: 25px;
+            padding: 14px 0;
+        }
+    
+        footer a:hover {
+            opacity: 0.6;
+        }
+    
+        /* Tăng line-height cho các dòng ở contact-info */
+        #contact .contact-info p {
+            line-height: 2.5;
+        }
+    
+        /* Thay đổi màu cho link, và hiệu ứng hover */
+        #contact .contact-info p a {
+            opacity: 0.7;
+        }
+    
+        #contact .contact-info p a:hover {
+            opacity: 1;
+        }
+    
+    }
+    /* ------------- End: Tablet Responsive ------------- */
+    
+    
+    
+    
+/* --- Start: PC RESPONSIVE --- */
+@media only screen and (min-width: 65em) {
+    /* Ẩn mobile_menu_button đi */
+    .header_menu {
+        display: none;
+    }
+}
+/* ------------- End: PCs Responsive ------------- */
