@@ -254,7 +254,7 @@ h1, h2, h3 {
 
     margin-top: 46.5px;
     padding-top: 50%;
-    background-image: url(../assets/image/slider/chicago.jpg);
+    background-image: url(./assets/image/slider/chicago.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }

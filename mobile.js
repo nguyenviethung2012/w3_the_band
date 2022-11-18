@@ -33,12 +33,19 @@
     // logic khi click vào option của menu (đóng menu, chạy đến bookmark - tự động xong)
     for (const option of menuOptions) {
         // var isParentMenu = option.nextElementSibling && option.nextElementSibling.classList.contains("subnav");
+        
         option.addEventListener('click', function(event) {
+            let moreIsOpened = subNav.classList.contains('display-block-mobile');
             if (option == moreButton) {
                 event.preventDefault();
 
             } else {
                 header.style.height = null;
+
+                // nếu menu con đang mở thì cũng đóng nó vào nốt
+                if (moreIsOpened) {
+                    subNav.classList.remove('display-block-mobile');
+                }
             }
         });
     }
