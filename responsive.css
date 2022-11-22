@@ -71,15 +71,6 @@
     .mobile-mt-8 {
         margin-top: 8px;
     }
-
-    /* MODAL */
-    .modal {
-        padding: 33% 3%;
-    }
-
-    .modal .modal-container {
-        width: 100%;
-    }
     
     /* Footer */
     footer p {
@@ -167,9 +158,20 @@
         #contact .contact-info p a:hover {
             opacity: 1;
         }
+
+        /* MODAL */
+         .modal {
+            padding: 33% 3%;
+        }
+
+        .modal .modal-container {
+            width: 100%;
+        }
+
+
     
     }
-    /* ------------- End: Tablet Responsive ------------- */
+    /* ------------- End: Tablet + Mobile Responsive ------------- */
     
     
     
